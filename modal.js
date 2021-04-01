@@ -34,4 +34,12 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
+modalClose.addEventListener("click", closeButtonX);
+
+function closeButtonX() {
+  modalbg.style.display = "none";
+  form.reset();
+  console.log("closeButtonX");
+}
+
 
