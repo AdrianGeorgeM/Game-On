@@ -20,7 +20,12 @@ body {
   max-width: 1300px;
   margin: 0 auto;
 }
-
+#errorFix{
+  padding-top:0 ;
+  color:red;
+  font-size: 10px;
+  display: none;
+}
 p {
   margin-bottom: 0;
   padding: 0.5vw;
@@ -288,6 +293,8 @@ input[data-error]::after {
   top: -1px;
   transition: 0.3s;
 }
+
+
 .checkbox-label .checkbox-icon::after,
 .checkbox2-label .checkbox-icon::after {
   content: "";
