@@ -192,7 +192,7 @@ const invalidInputs = () => {
 
 		falseValues.push(radioButtons[0]);
 	} else {
-		// RADIO SUCCESS
+		// if success 
 		errorFix.style.display="none";
 
 	}
