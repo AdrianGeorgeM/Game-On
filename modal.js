@@ -112,6 +112,7 @@ function removeInvalidInputs() {
 	email.classList.remove("confirmSuccess");
 	birthDay.classList.remove("confirmSuccess");
 	tournaments.classList.remove("confirmSuccess");
+	errorFix.style.display="block";
 }
 
 // check the value for inputs
