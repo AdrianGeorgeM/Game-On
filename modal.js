@@ -186,10 +186,7 @@ const invalidInputs = () => {
 	}
 	// I use some() tests whether at least one element in the array pass the condition
 	if (!radioButtonsArray.some((el) => el.checked)) {
-  let newEl = document.createElement("p");
-  
-  let newText = document.createTextNode("error");
- 
+     
 
 		//  showError(formData1,"Please Check");
 
