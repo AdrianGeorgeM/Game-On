@@ -185,14 +185,19 @@ const invalidInputs = () => {
 
 		// return true
 	}
+
+	
 	// I use some() tests whether at least one element in the array pass the condition
 	if (!radioButtonsArray.some((el) => el.checked)) {
 		 console.log("Please choose one button");
 		 errorFix.style.display="block";
-
+	
 		falseValues.push(radioButtons[0]);
 	} else {
 		// if success 
+
+
+
 		errorFix.style.display="none";
 
 	}
