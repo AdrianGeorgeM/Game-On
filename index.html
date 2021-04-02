@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Reservation</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="modal.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-      href="https://fonts.googleapis.com/css?family=DM+Sans"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="topnav" id="myTopnav">
-      <div class="header-logo">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Reservation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="modal.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="header-logo">
       <img alt="logo" src="Logo.png" width="auto" height="auto" />
     </div>
     <div class="main-navbar">
-      
+
       <!-- <a href="#" class="active"><span>Home</span></a> -->
       <a href="#"><span>Event Details</span></a>
       <a href="#"><span>About Us</span></a>
@@ -27,231 +26,142 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    </div>
   </div>
-    <main>
-      <div class="hero-section">
-        <div class="hero-content">
-          <h1 class="hero-headline">
-            US Nationwide <br>
-            Game-a-Thon
-          </h1>
-          <p class="hero-text">
-            Do you live to game? Our next gaming event is now accepting
-            reservations for players, but spots are limited.
-          </p>
-          <button class="btn-signup modal-btn">
-            sign up now
-          </button>
-        </div>
-        <div class="hero-img">
-          <img src="./bg_img.jpg" alt="img" />
-        </div>
+  </div>
+  <main>
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-headline">
+          US Nationwide <br>
+          Game-a-Thon
+        </h1>
+        <p class="hero-text">
+          Do you live to game? Our next gaming event is now accepting
+          reservations for players, but spots are limited.
+        </p>
         <button class="btn-signup modal-btn">
           sign up now
         </button>
       </div>
+      <div class="hero-img">
+        <img src="./bg_img.jpg" alt="img" />
+      </div>
+      <button class="btn-signup modal-btn">
+        sign up now
+      </button>
+    </div>
 
-      <div class="bground">
-        <div class="content">
-          <span class="close"></span>
-          <div class="modal-body">
-            <form
-            id="form"
-              name="reserve"
-              action="index.html"
-              method="get"
-              novalidate 
-              
-             >
-        <!--  onsubmit= "return validateForm();" -->
+    <div class="bground">
+      <div class="content">
+        <span class="close"></span>
+        <div class="modal-body">
+          <form id="form" name="reserve" action="index.html" method="get" novalidate>
+            <!--  onsubmit= "return validateForm();" -->
             <!--Add novalidate attribute on the form is what stops the form from showing its own error message bubbles, 
               --and allows  to display the custom error messages 
              --When present, it specifies that the form-data (input) should not be validated when submitted.
             -->
-              <div
-                class="formData">
-                <!-- Added <label for="first" wich specifies which form element
+            <div class="formData">
+              <!-- Added <label for="first" wich specifies which form element
                    a label is bound to-->
-                   <!-- Add required -->
-                <label for="first">First Name</label><br>
-                <input
-                  class="text-control"
-                  type="text"
-                  id="first"
-                  name="first"
-                  minlength="2"
-                  autocomplete="off"
-                  required
-                /><br>
-              </div>
-              <div
-                class="formData">
-           <!-- Added <label for="last" wich specifies which form element
+              <!-- Add required -->
+              <label for="first">First Name</label><br>
+              <input class="text-control" type="text" id="first" name="first" minlength="2" autocomplete="off"
+                required /><br>
+            </div>
+            <div class="formData">
+              <!-- Added <label for="last" wich specifies which form element
                    a label is bound to-->
-                   <!-- Add minlength and required and autocomplete -->
-                <label for="last">Last Name</label><br>
-                <input
-                  class="text-control"
-                  type="text"
-                  id="last"
-                  name="last"
-                  minlength="2"
-                  autocomplete="off"
-                  required
-                /><br>
-              </div>
-              <div
-                class="formData">
-                 <!-- Added <label for="email" wich specifies which form element
+              <!-- Add minlength and required and autocomplete -->
+              <label for="last">Last Name</label><br>
+              <input class="text-control" type="text" id="last" name="last" minlength="2" autocomplete="off"
+                required /><br>
+            </div>
+            <div class="formData">
+              <!-- Added <label for="email" wich specifies which form element
                    a label is bound to-->
-                <label for="email">Email</label><br>
-                <input
-                  class="text-control"
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                /><br>
-              </div>
-              <div
-                class="formData">
-                 <!-- Added <label for="birthday" wich specifies which form element
+              <label for="email">Email</label><br>
+              <input class="text-control" type="email" id="email" name="email" required /><br>
+            </div>
+            <div class="formData">
+              <!-- Added <label for="birthday" wich specifies which form element
                    a label is bound to-->
-                <label for="birthdate">Birthdate</label><br>
-                <input
-                  class="text-control"
-                  type="date"
-                  id="birthdate"
-                  name="birthdate"
-                  required
-                /><br>
-              </div>
-              <div
-                class="formData">
-                 <!-- Added <label for="quantity" wich specifies which form element
+              <label for="birthdate">Birthdate</label><br>
+              <input class="text-control" type="date" id="birthdate" name="birthdate" required /><br>
+            </div>
+            <div class="formData">
+              <!-- Added <label for="quantity" wich specifies which form element
                    a label is bound to-->
-                   <!-- add required -->
-                <label for="quantity"></label>
-                <label>How many tournaments have you attended? </label><br>
-                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" required>
-              </div>
-              <p class="text-label">Which location?</p>
-              <div
-                class="formData1">
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location1"
-                  name="location"
-                  value="New York"
-                />
-                <label class="checkbox-label" for="location1">
-                  <span class="checkbox-icon"></span>
-                  New York</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location2"
-                  name="location"
-                  value="San Francisco"
-                />
-                <label class="checkbox-label" for="location2">
-                  <span class="checkbox-icon"></span>
-                  San Francisco</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location3"
-                  name="location"
-                  value="Seattle"
-                />
-                <label class="checkbox-label" for="location3">
-                  <span class="checkbox-icon"></span>
-                  Seattle</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location4"
-                  name="location"
-                  value="Chicago"
-                />
-                <label class="checkbox-label" for="location4">
-                  <span class="checkbox-icon"></span>
-                  Chicago</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location5"
-                  name="location"
-                  value="Boston"
-                />
-                <label class="checkbox-label" for="location5">
-                  <span class="checkbox-icon"></span>
-                  Boston</label
-                >
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location6"
-                  name="location"
-                  value="Portland"
-                />
-                <label class="checkbox-label" for="location6">
-                  <span class="checkbox-icon"></span>
-                  Portland</label
-                >
-              </div>
+              <!-- add required -->
+              <label for="quantity"></label>
+              <label>How many tournaments have you attended? </label><br>
+              <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" required>
+            </div>
+            <p class="text-label">Which location?</p>
+            <div class="formData1">
+              <input class="checkbox-input" type="radio" id="location1" name="location" value="New York" />
+              <label class="checkbox-label" for="location1">
+                <span class="checkbox-icon"></span>
+                New York</label>
+              <input class="checkbox-input" type="radio" id="location2" name="location" value="San Francisco" />
+              <label class="checkbox-label" for="location2">
+                <span class="checkbox-icon"></span>
+                San Francisco</label>
+              <input class="checkbox-input" type="radio" id="location3" name="location" value="Seattle" />
+              <label class="checkbox-label" for="location3">
+                <span class="checkbox-icon"></span>
+                Seattle</label>
+              <input class="checkbox-input" type="radio" id="location4" name="location" value="Chicago" />
+              <label class="checkbox-label" for="location4">
+                <span class="checkbox-icon"></span>
+                Chicago</label>
+              <input class="checkbox-input" type="radio" id="location5" name="location" value="Boston" />
+              <label class="checkbox-label" for="location5">
+                <span class="checkbox-icon"></span>
+                Boston</label>
+              <input class="checkbox-input" type="radio" id="location6" name="location" value="Portland" />
+              <label class="checkbox-label" for="location6">
+                <span class="checkbox-icon"></span>
+                Portland</label>
+            </div>
 
-              <div
-                class="formData">
-                <input
-                  class="checkbox-input"
-                  type="checkbox"
-                  id="checkbox1"
-                  checked
-                />
-                <label class="checkbox2-label" for="checkbox1" >
-                  <span class="checkbox-icon"></span>
-                  I have read and I agree to GameOn's terms and conditions.
-                </label>
-                <br>
-                <!-- Add Div.formData -->
-                <div class="formData">
-                <input class="checkbox-input" type="checkbox" id="checkbox2" />
-                <label class="checkbox2-label" for="checkbox2">
-                  <span class="checkbox-icon"></span>
-                  Please sign me up to be notified about future events.
-                </label>
-                <br>
-              </div>
+            <div class="formData">
+              <input class="checkbox-input" type="checkbox" id="checkbox1" checked />
+              <label class="checkbox2-label" for="checkbox1">
+                <span class="checkbox-icon"></span>
+                I have read and I agree to GameOn's terms and conditions.
+              </label>
+              <br>
+              <!-- add missing Div for closing Terms and Cons -->
             </div>
-              <input
-              id="btn-submit"
-                class="btn-submit"
-                type="submit"
-                class="button"
-                value="Go"
-              />
-              <!-- added id for button to use to change the value -->
-            </form>
-            <!-- Add confirmation of successful submission  -->
-            <div id="confirmation">
-              <p>Thank you for submitting your registration details.</p>
+
+            <!-- Add Div.formData -->
+            <div class="formData">
+              <input class="checkbox-input" type="checkbox" id="checkbox2" />
+              <label class="checkbox2-label" for="checkbox2">
+                <span class="checkbox-icon"></span>
+                Please sign me up to be notified about future events.
+              </label>
+              <br>
             </div>
+
+            <input id="btn-submit" class="btn-submit" type="submit" class="button" value="Go" />
+            <!-- added id for button to use to change the value -->
+          </form>
+          <!-- Add confirmation of successful submission  -->
+          <div id="confirmation">
+            <p>Thank you for submitting your registration details.</p>
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <p class="copyrights">
-        Copyright 2014 - 2020, GameOn Inc.
-      </p>
-    </footer>
-    <script src="modal.js"></script>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <p class="copyrights">
+      Copyright 2014 - 2020, GameOn Inc.
+    </p>
+  </footer>
+  <script src="modal.js"></script>
+</body>
+
 </html>
