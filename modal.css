@@ -350,7 +350,8 @@ input[data-error]::after {
   left: 0;
   top: 50px;
   z-index: 10;
-  height: 85%;
+  /* FIX HEIGHT to not cover the button */
+  height: 83%;
   font-size: 36px;
 
   text-align: center;
