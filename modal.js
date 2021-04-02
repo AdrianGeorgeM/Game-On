@@ -189,8 +189,7 @@ const invalidInputs = () => {
   let newEl = document.createElement("p");
   
   let newText = document.createTextNode("error");
-  newEl.appendChild(newText);
-  formData1.appendChild(newText)
+ 
 
 		//  showError(formData1,"Please Check");
 
