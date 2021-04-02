@@ -157,6 +157,21 @@ const invalidInputs = () => {
   }
 
 
+// function  to show error message
+const showError = (input, message) => {
+  const formControl = input.parentElement;
+  formControl.setAttribute("data-error-visible", "true");
+  formControl.setAttribute("data-error", message);
+};
+
+// function  to show confirmation message
+const onSuccess = (input, message) => {
+  const formControl = input.parentElement;
+  formControl.removeAttribute("data-error-visible", "true");
+  formControl.removeAttribute("data-error", message);
+  input.classList.add("confirmSuccess");
+
+};me
 
 
 
