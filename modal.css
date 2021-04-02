@@ -592,7 +592,7 @@ footer {
 @keyframes modalopen {
   from {
     opacity: 0;
-    transform: translateY(-150px);
+    transform: translateY(-140px);
   }
   to {
     opacity: 1;
