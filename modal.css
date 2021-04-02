@@ -215,11 +215,16 @@ input {
   display: block;
   margin-top: 7px;
   margin-bottom: 7px;
-  text-align: right;
+  /* Change the Text To Left */
+  text-align: left;
   line-height: 0.3;
   opacity: 0;
   transition: 0.3s;
 }
+
+.confirmSuccess{
+  border: 2px solid green;
+  }
 .formData[data-error-visible="true"]::after {
   opacity: 1;
 }
@@ -332,6 +337,25 @@ input[data-error]::after {
   color: #fff;
   cursor: pointer;
   border: 0;
+}
+
+#confirmation {
+  display: none;
+  align-items: center;
+  opacity: 1;
+  font-weight: 400;
+  background-color: #232323;
+  padding: 0 70px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 10;
+  /* FIX HEIGHT to not cover the button */
+  height: 83%;
+  font-size: 36px;
+
+  text-align: center;
+  line-height: 52px;
 }
 /* custom select styles */
 .custom-select {
