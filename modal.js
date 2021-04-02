@@ -20,6 +20,7 @@ const form = document.getElementById("form");
 const submitBtn = document.getElementById("btn-submit");
 const confirmationMessage = document.getElementById("confirmation");
 const modalClose = document.querySelector(".close");
+const errorFix = document.getElementById("errorFix");
 
 const firstName = document.getElementById("first");
 const lastName = document.getElementById("last");
@@ -186,11 +187,14 @@ const invalidInputs = () => {
 	}
 	// I use some() tests whether at least one element in the array pass the condition
 	if (!radioButtonsArray.some((el) => el.checked)) {
-		//  showError(formData1,"Please Check");
+		 console.log("Please choose one button");
+		 errorFix.style.display="block";
 
 		falseValues.push(radioButtons[0]);
 	} else {
-		// RADIO SUCCESS
+		// if success 
+		errorFix.style.display="none";
+
 	}
 
 	if (!termsAndConditions.checked) {
