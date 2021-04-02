@@ -181,23 +181,20 @@ const invalidInputs = () => {
 		// return false;
 	} else {
 		onSuccess(tournaments);
-	
+
 		// return true
 	}
 	// I use some() tests whether at least one element in the array pass the condition
 	if (!radioButtonsArray.some((el) => el.checked)) {
-     
-
 		//  showError(formData1,"Please Check");
 
-     
 		falseValues.push(radioButtons[0]);
 	} else {
 		// RADIO SUCCESS
 	}
 
 	if (!termsAndConditions.checked) {
-		showError(termsAndConditions, "Please Check");
+		showError(termsAndConditions, "Please agree to the terms and conditions.");
 		falseValues.push(termsAndConditions);
 	} else {
 		onSuccess(termsAndConditions);
