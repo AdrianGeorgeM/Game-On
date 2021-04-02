@@ -47,6 +47,7 @@ const closeButtonX = () => {
 	console.log("closeButtonX=Click");
 	removeInvalidInputs();
 	removeConfirmation();
+	errorFix.style.display="none";
 };
 // close modal event
 modalClose.addEventListener("click", closeButtonX);
