@@ -221,6 +221,10 @@ input {
   opacity: 0;
   transition: 0.3s;
 }
+
+.confirmSuccess{
+  border: 2px solid green;
+  }
 .formData[data-error-visible="true"]::after {
   opacity: 1;
 }

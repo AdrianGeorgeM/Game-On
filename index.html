@@ -63,8 +63,8 @@
               method="get"
               novalidate 
               
-              onsubmit= "return validateForm();">
-        
+             >
+        <!--  onsubmit= "return validateForm();" -->
             <!--Add novalidate attribute on the form is what stops the form from showing its own error message bubbles, 
               --and allows  to display the custom error messages 
              --When present, it specifies that the form-data (input) should not be validated when submitted.
@@ -231,11 +231,13 @@
               </div>
             </div>
               <input
+              id="btn-submit"
                 class="btn-submit"
                 type="submit"
                 class="button"
                 value="Go"
               />
+              <!-- added id for button to use to change the value -->
             </form>
             <!-- Add confirmation of successful submission  -->
             <div id="confirmation">

@@ -33,6 +33,9 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 // launch modal form
 function launchModal() {
 	modalbg.style.display = "block";
+ 
+
+
 }
 //--Close modal form + reset after closing
 //__add this function on top of the listener
@@ -41,32 +44,19 @@ const closeButtonX = () => {
 	modalbg.style.display = "none";
 	form.reset();
 	console.log("closeButtonX=Click");
-	removeInvalidStyling();
+  removeInvalidInputs;
 };
 // close modal event
 modalClose.addEventListener("click", closeButtonX);
 
-function removeInvalidStyling() {
+function removeInvalidInputs() {
 	formData.forEach((node) => node.removeAttribute("data-error-visible"));
 	formData.forEach((node) => node.removeAttribute("data-error"));
+  lastName.classList.remove("confirmSuccess");
+	firstName.classList.remove("confirmSuccess");
+	email.classList.remove("confirmSuccess");
+	birthDay.classList.remove("confirmSuccess");
+	tournaments.classList.remove("confirmSuccess");
 }
-// prevent submit
-form.addEventListener("submit", (e) => {
-	e.preventDefault();
-	console.log("form event ");
-
-});
 
 
-
-
-
-
-
-
-
-
-
-
-
-  
