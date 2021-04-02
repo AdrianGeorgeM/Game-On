@@ -85,10 +85,14 @@ img {
   border-radius: 15px;
 }
 
-.topnav a.active {
+.topnav a.active  {
   background-color: #ff0000;
   color: #ffffff;
   border-radius: 15px;
+}
+/* Add under border FOR Event Details */
+.topnav a.active  span {
+  border-bottom: 1px solid #fff;
 }
 
 .topnav .icon {
