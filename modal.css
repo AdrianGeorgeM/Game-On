@@ -670,7 +670,7 @@ footer {
 
   from {
     opacity: 0;
-    transform: translateY(-140px);
+    transform: translateY(-130px);
   }
   to {
     opacity: 1;
