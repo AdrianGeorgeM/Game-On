@@ -99,7 +99,7 @@ function removeConfirmation() {
 		closeButtonX();
 	});
 	form.addEventListener("submit", onSubmit);
-	console.log("??");
+	console.log("Form Submit");
 }
 
 // handle submit event

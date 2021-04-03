@@ -13,7 +13,7 @@
 <body>
   <div class="topnav" id="myTopnav">
     <div class="header-logo">
-      <img alt="logo" src="Logo.png" width="auto" height="auto" />
+      <img alt="logo" src="Logo.png" />
     </div>
     <div class="main-navbar">
 
@@ -27,7 +27,7 @@
       </a>
     </div>
   </div>
-  </div>
+ 
   <main>
     <div class="hero-section">
       <div class="hero-content">
@@ -58,8 +58,8 @@
           <form id="form" name="reserve" action="index.html" method="get" novalidate>
             <!--  onsubmit= "return validateForm();" -->
             <!--Add novalidate attribute on the form is what stops the form from showing its own error message bubbles, 
-              --and allows  to display the custom error messages 
-             --When present, it specifies that the form-data (input) should not be validated when submitted.
+            and allows  to display the custom error messages 
+             When present, it specifies that the form-data (input) should not be validated when submitted.
             -->
             <div class="formData">
               <!-- Added <label for="first" wich specifies which form element
@@ -123,9 +123,11 @@
               <label class="checkbox-label" for="location6">
                 <span class="checkbox-icon"></span>
                 Portland</label>
-                <label class="checkbox-label" for="error">
+                <label > 
                   <span id="errorFix" >Please choose one option.</span>
-                  </label>
+                </label>
+                 
+               
                   <br>
               
             </div>
@@ -150,7 +152,7 @@
               <br>
             </div>
 
-            <input id="btn-submit" class="btn-submit" type="submit" class="button" value="Go" />
+            <input id="btn-submit" class=" btn-submit button" type="submit" value="Go" />
             <!-- added id for button to use to change the value -->
           </form>
           <!-- Add confirmation of successful submission  -->
