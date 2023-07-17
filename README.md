@@ -47,6 +47,7 @@ To embark on this experience:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Remember to update tests as appropriate.
 
 ## 📸 Screenshots
+![Screenshot 2023-07-17 at 18 18 25](https://github.com/AdrianGeorgeM/GameOn-Project4/assets/62570164/393af52e-0189-4d6c-a001-a2c27f3de5bd)
 
 
 
