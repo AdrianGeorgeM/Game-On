@@ -13,23 +13,25 @@
 	</head>
 
 	<body>
-		<div class="topnav" id="myTopnav">
-			<div class="header-logo">
-				<img alt="logo" src="logo.png" />
-			</div>
-			<div class="main-navbar">
-				<a href="#" class="active"><span>Event Details</span></a>
-				<a href="#"><span>About Us</span></a>
-				<a href="#"><span>Contact</span></a>
-				<a href="#"><span>Past Events</span></a>
-				<a href="javascript:void(0);" class="icon" onclick="editNav()">
-					<i class="fa fa-bars"></i>
-				</a>
-			</div>
-		</div>
+		<header>
+			<nav class="topnav" id="myTopnav">
+				<div class="header-logo">
+					<img src="Logo.png" alt="GameOn logo" />
+				</div>
+				<div class="main-navbar">
+					<a href="#" class="active"><span>Event Details</span></a>
+					<a href="#"><span>About Us</span></a>
+					<a href="#"><span>Contact</span></a>
+					<a href="#"><span>Past Events</span></a>
+					<a href="javascript:void(0);" class="icon" onclick="editNav()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>
+			</nav>
+		</header>
 
 		<main>
-			<div class="hero-section">
+			<section class="hero-section">
 				<div class="hero-content">
 					<h1 class="hero-headline">
 						US Nationwide <br />
@@ -42,10 +44,10 @@
 					<button class="btn-signup modal-btn">sign up now</button>
 				</div>
 				<div class="hero-img">
-					<img src="./bg_img.jpg" alt="img" />
+					<img src="./bg_img.jpg" alt="Game image" />
 				</div>
 				<button class="btn-signup modal-btn">sign up now</button>
-			</div>
+			</section>
 
 			<div class="bground">
 				<div class="content">
@@ -97,8 +99,8 @@
 								/><br />
 							</div>
 							<div class="formData">
-								<label for="quantity"></label>
-								<label>How many tournaments have you attended? </label><br />
+								<label for="quantity">How many tournaments have you attended?</label
+								><br />
 								<input
 									type="number"
 									class="text-control"
@@ -211,9 +213,11 @@
 				</div>
 			</div>
 		</main>
+
 		<footer>
-			<p class="footer">Copyright 2014 - 2020, GameOn Inc.</p>
+			<p class="footer">Copyright 2014 - 2023, GameOn Inc.</p>
 		</footer>
+
 		<script src="modal.js"></script>
 	</body>
 </html>
