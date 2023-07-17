@@ -3,13 +3,13 @@
   --font-slab: var(--font-default);
   --modal-duration: 0.8s;
 }
-
+/* Resetting default styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+/* Basic body styles */
 body {
   margin: 0;
   display: flex;
@@ -517,7 +517,7 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
-
+/* Media query for devices with width up to 800px */
 @media screen and (max-width: 800px) {
   .hero-section {
     display: block;
@@ -587,7 +587,7 @@ footer {
     margin-left: 0;
   }
 }
-
+/* Media query for devices with width up to 375px */
 @media screen and (max-width: 375px) {
   .hero-headline {
     font-size: 30px;
